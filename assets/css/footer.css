@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #39489c;
+  background-color: var(--bg-secondary);
   color: var(--text);
   padding: 2rem 5rem;
   height: 30vh;

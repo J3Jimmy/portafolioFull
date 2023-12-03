@@ -1,6 +1,5 @@
 .tech-cards {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
 }
@@ -13,8 +12,7 @@
   position: relative;
 }
 
-.tech-card__front,
-.tech-card__back {
+.tech-card__front{
   width: inherit;
   height: inherit;
   padding: 1em;
@@ -23,15 +21,14 @@
   transform-origin: 50% 50%;
   top: 0;
   left: 0;
-  backface-visibility: hidden;
+
   /* la cara posterior del elemento no será visible */
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: var(--text-bold);
-  border-radius: 10px;
-  transition: transform 0.6s;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  
 }
 
 .tech-card__front[data-tech="html"] {
@@ -39,22 +36,15 @@
   color: white;
 }
 
-.tech-card__back {
-  transform: rotateX(-180deg);
-  background-color: var(--bg-secondary);
-  color: var(--text);
-}
+
 
 .tech-card:hover .tech-card__front {
-  transform: rotateX(180deg);
+  transform: rotateX(20deg);
 }
 
-.tech-card:hover .tech-card__back {
-  transform: rotateX(0deg);
-}
 
 .tech-card__front[data-tech="css"] {
-  background-color: #2965f1;
+  background-color: #204aad;
   color: white;
 }
 
