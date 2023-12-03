@@ -93,8 +93,8 @@
 
   &:hover {
     cursor: pointer;
-    background-color: var(--text);
-    color: var(--bg);
+    background-color: rgb(76, 129, 245);
+    color: rgb(89, 42, 206);
   }
 }
 
