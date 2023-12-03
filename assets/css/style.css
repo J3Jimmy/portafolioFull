@@ -22,8 +22,8 @@
   --bg-secondary: white;
   --text: #222;
 
-  --morph1: #e5b2f7;
-  --morph2: #fff4a3;
+  --morph1: #3246b4;
+  --morph2: #c93e3e;
 }
 
 .body--dark {
@@ -31,8 +31,8 @@
   --bg-secondary: black;
   --text: #f0f0f0;
 
-  --morph1: #9400D3;
-  --morph2: #FFD700;
+  --morph1: #5c89dd;
+  --morph2: #cea8d1;
 }
 
 .body {
