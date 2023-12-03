@@ -22,17 +22,17 @@
   --bg-secondary: white;
   --text: #222;
 
-  --morph1: #3246b4;
-  --morph2: #c93e3e;
+  --morph1: rgb(231, 201, 164);
+  --morph2: rgb(214, 135, 159);
 }
 
 .body--dark {
-  --bg: #070732;
-  --bg-secondary: black;
+  --bg: #5363bd;
+  --bg-secondary: rgb(89, 42, 206);
   --text: #f0f0f0;
 
-  --morph1: #5c89dd;
-  --morph2: #cea8d1;
+  --morph1: rgb(252, 182, 94);
+  --morph2: rgb(213, 91, 128);
 }
 
 .body {

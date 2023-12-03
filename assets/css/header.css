@@ -100,15 +100,15 @@
 
 .morph {
   content: '';
-  width: 35vw;
-  height: 25vw;
+  width: 45vw;
+  height: 35vw;
   background-color: red;
   position: absolute;
   z-index: -1;
   border-radius: 70% 30% 30% 70%;
   background: linear-gradient(var(--morph1), var(--morph2));
   filter: blur(100px);
-  animation: morph 12s infinite linear;
+  animation: morph 6s infinite linear;
   will-change: transform;
 }
 
