@@ -1,0 +1,83 @@
+.tech-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.tech-card {
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tech-card__front{
+  width: inherit;
+  height: inherit;
+  padding: 1em;
+  text-align: center;
+  position: absolute;
+  transform-origin: 50% 50%;
+  top: 0;
+  left: 0;
+
+  /* la cara posterior del elemento no será visible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--text-bold);
+  border-radius: 100px;
+  
+}
+
+.tech-card__front[data-tech="html"] {
+  background-color: #e34c26;
+  color: white;
+}
+
+
+
+.tech-card:hover .tech-card__front {
+  transform: rotateX(20deg);
+}
+
+
+.tech-card__front[data-tech="css"] {
+  background-color: #204aad;
+  color: white;
+}
+
+.tech-card__front[data-tech="javascript"] {
+  background-color: #f0db4f;
+  color: #323330;
+}
+
+.tech-card__front[data-tech="git"] {
+  background-color: #f34f29;
+  color: white;
+}
+
+.tech-card__front[data-tech="react"] {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+.tech-card__front[data-tech="node"] {
+  background-color: #8cc84b;
+  color: #333;
+}
+
+@media (max-width:1030px) {
+  .tech-cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width:750px) {
+  .tech-card {
+    width: 120px;
+    height: 120px;
+  }
+}

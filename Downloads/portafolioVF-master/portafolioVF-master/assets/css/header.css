@@ -1,0 +1,320 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.headContainer {
+  width: 75%; /* Ancho del 90% del contenedor padre */
+  max-width: 1200px; /* Ancho máximo de 1200px */
+  margin: 0 auto; /* Centrar el contenedor */
+  display: grid;
+  grid-template-rows: auto auto auto; /* Tres filas de alto automático */
+  grid-template-columns: auto auto; /* Dos columnas de ancho igual */
+  grid-gap: 10px; /* Espacio entre las celdas */
+  justify-items: center; /* Centrar horizontalmente los elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+}
+
+.item1 {
+  grid-row: 1; /* Ubicar en la primera fila */
+  grid-column: 1 / 3; /* Ocupar las dos columnas horizontales */
+  font-weight: var(--text-medium);
+  text-align: center; /* Centrar el texto */
+  font-size: 5vw; /* Tamaño de fuente relativo al ancho del viewport */
+  margin-top: 2vw;
+  margin-bottom: -2vw;
+}
+
+.item2 {
+  grid-row: 2; /* Ubicar en la segunda fila */
+  grid-column: 1; /* Ubicar en la primera columna */
+  width: 90%; /* Ancho del 90% del contenedor padre */
+  max-width: 400px; /* Ancho máximo de 400px */
+  height: auto; /* Mantener la proporción original */
+}
+
+.item3 {
+  grid-row: 2; /* Ubicar en la segunda fila */
+  grid-column: 2; /* Ubicar en la segunda columna */
+  font-weight: var(--text-ligth);
+  text-align: center; /* Centrar el texto */
+  font-size: 2.5vw; /* Tamaño de fuente relativo al ancho del viewport */
+}
+
+.item4 {
+  grid-row: 3; /* Ubicar en la tercera fila */
+  grid-column: 1 / 3; /* Ocupar las dos columnas horizontales */
+  font-weight: var(--text-bold);
+  text-align: center; /* Centrar el texto */
+  width: 90%; /* Ancho del 90% del contenedor padre */
+  max-width: 800px; /* Ancho máximo de 800px */
+  font-size: 5vw; /* Tamaño de fuente relativo al ancho del viewport */
+  text-transform: uppercase;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto; /* Mantiene la relación de aspecto de la imagen */
+  margin-right: 0;
+}
+
+
+
+
+
+.div--contact {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.div__a {
+  background-color: var(--bg-secondary);
+  color: var(--text);
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.8rem;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(76, 129, 245);
+    color: rgb(89, 42, 206);
+  }
+}
+
+.morph {
+  content: '';
+  width: 45vw;
+  height: 35vw;
+  background-color: red;
+  position: absolute;
+  z-index: -1;
+  border-radius: 70% 30% 30% 70%;
+  background: linear-gradient(var(--morph1), var(--morph2));
+  filter: blur(100px);
+  animation: morph 6s infinite linear;
+  will-change: transform;
+}
+
+
+@keyframes morph {
+  0% {
+    transform: rotate(0) scale(1);
+
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.3);
+  }
+
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+
+@media (max-width:1024px) {
+  .header {
+    row-gap: 6vh;
+  }
+
+  .headContainer {
+    width: 75%; /* Ancho del 90% del contenedor padre */
+    max-width: 1200px; /* Ancho máximo de 1200px */
+    margin: 0 auto; /* Centrar el contenedor */
+    display: grid;
+    grid-template-rows: auto auto auto; /* Tres filas de alto automático */
+    grid-template-columns: auto auto; /* Dos columnas de ancho igual */
+    grid-gap: 10px; /* Espacio entre las celdas */
+    justify-items: center; /* Centrar horizontalmente los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+  }
+  
+  .item1 {
+    grid-row: 1; /* Ubicar en la primera fila */
+    grid-column: 1 / 3; /* Ocupar las dos columnas horizontales */
+    font-weight: var(--text-medium);
+    text-align: center; /* Centrar el texto */
+    font-size: 5vw; /* Tamaño de fuente relativo al ancho del viewport */
+    margin-top: 2vw;
+    margin-bottom: -2vw;
+  }
+  
+  .item2 {
+    grid-row: 2; /* Ubicar en la segunda fila */
+    grid-column: 1; /* Ubicar en la primera columna */
+    width: 90%; /* Ancho del 90% del contenedor padre */
+    max-width: 400px; /* Ancho máximo de 400px */
+    height: auto; /* Mantener la proporción original */
+  }
+  
+  .item3 {
+    grid-row: 2; /* Ubicar en la segunda fila */
+    grid-column: 2; /* Ubicar en la segunda columna */
+    font-weight: var(--text-ligth);
+    text-align: center; /* Centrar el texto */
+    font-size: 2.5vw; /* Tamaño de fuente relativo al ancho del viewport */
+  }
+  
+  .item4 {
+    grid-row: 3; /* Ubicar en la tercera fila */
+    grid-column: 1 / 3; /* Ocupar las dos columnas horizontales */
+    font-weight: var(--text-bold);
+    text-align: center; /* Centrar el texto */
+    width: 90%; /* Ancho del 90% del contenedor padre */
+    max-width: 800px; /* Ancho máximo de 800px */
+    font-size: 5vw; /* Tamaño de fuente relativo al ancho del viewport */
+    text-transform: uppercase;
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    margin-right: 0;
+  }
+
+  .morph {
+    width: 60vw;
+    height: 60vw;
+  }
+}
+
+@media (max-height:550px) {
+  .header {
+    row-gap: 5px; /* Cambié de vh a px para un valor fijo */
+  }
+
+  .headContainer {
+    width: 75%; /* Ancho del 90% del contenedor padre */
+    max-width: 1200px; /* Ancho máximo de 1200px */
+    margin: 0 auto; /* Centrar el contenedor */
+    display: grid;
+    grid-template-rows: auto auto auto; /* Tres filas de alto automático */
+    grid-template-columns: auto auto; /* Dos columnas de ancho igual */
+    grid-gap: 10px; /* Espacio entre las celdas */
+    justify-items: center; /* Centrar horizontalmente los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+  }
+
+  .item1 {
+    font-size: 5vw; /* Reduje el tamaño del texto para que quepa en pantallas más pequeñas */
+    margin: 0 auto;
+    margin-bottom: -7vw; /* Reduje el margen inferior */
+  }
+
+  .item3 {
+    font-size: 2vw; /* Reduje el tamaño del texto para que quepa en pantallas más pequeñas */
+    width: 100%;
+    margin-right: -10%; /* Cambié el valor de margen a un porcentaje más pequeño */
+    margin-bottom: -30%;
+  }
+
+  .item4 {
+    font-size: 5vw; /* Reduje el tamaño del texto para que quepa en pantallas más pequeñas */
+    width: 90%; /* Ajusté el ancho del elemento para que quepa en pantallas más pequeñas */
+    margin-left: -5%; /* Cambié el valor de margen a un porcentaje más pequeño */
+    text-align: center;
+    margin-top: 7vw; /* Reduje el margen superior */
+  }
+    
+  .logo {
+    display: block;
+    margin-left: -5%; /* Cambié el valor de margen a un porcentaje más pequeño */
+    width: 100%; /* Ajusté el ancho del elemento para que quepa en pantallas más pequeñas */
+    height: auto;
+    margin-right: 0;
+    margin-bottom: -30%;
+    
+  }
+}
+
+
+@media (max-width:550px) {
+  .header {
+    row-gap: 5vh;
+  }
+
+  .headContainer {
+    width: 75%; /* Ancho del 90% del contenedor padre */
+    max-width: 1200px; /* Ancho máximo de 1200px */
+    margin: 0 auto; /* Centrar el contenedor */
+    display: grid;
+    grid-template-rows: auto auto auto; /* Tres filas de alto automático */
+    grid-template-columns: auto auto; /* Dos columnas de ancho igual */
+    grid-gap: 10px; /* Espacio entre las celdas */
+    justify-items: center; /* Centrar horizontalmente los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+  }
+
+  .item1 {
+    font-size: 7vw;
+    margin: 0 auto; /* Esto centra el elemento horizontalmente */
+    margin-bottom: 10vw;
+  }
+
+  .item3 {
+    font-size: 4vw;
+    width: 90%;
+    margin-right: -16vw ;
+  }
+
+  .item4 {
+    font-size: 8vw;
+    width: 80%;
+    margin-left: -10vw;
+    text-align: center; /* Esto centra el texto dentro del elemento */
+    margin-top: 10vw;
+}
+    
+.logo {
+  display: block;
+  margin-left: -10vw;
+  width: 180%;
+  height: auto; /* Mantiene la relación de aspecto de la imagen */
+  margin-right: 0;
+}
+
+
+
+
+
+  
+
+  .div--contact {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .div__a {
+    padding: 0.7rem 0.9rem;
+    border-radius: 1.8rem;
+  }
+
+  .morph {
+    width: 80vw;
+    height: 80vw;
+  }
+
+
+
+
+}

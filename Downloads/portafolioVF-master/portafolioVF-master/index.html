@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jimmy Arenas</title>
+  <link rel="shortcut icon" href="./assets/img/portafolio.png" type="image/x-icon">
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <link rel="stylesheet" href="./assets/css/contactMe.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/aboutMe.css">
+  <link rel="stylesheet" href="./assets/css/technologies.css">
+  <link rel="stylesheet" href="./assets/css/projects.css">
+  <link rel="stylesheet" href="./assets/css/reviews.css">
+
+  <meta name="author" content="Jimmy Arenas">
+  <meta name="description"
+    content="Desarrollador Full Stack, especializado en construcción de interfaces de usuarios con React y creación de API Rest con Node.js">
+
+  <meta name="keywords"
+    content="Full Stack Developer, Desarrollador Full Stack,JavaScript, CSS,HTML, REACT,GIT, Node.js, Express, SQL, Postgres, programodor con experiencia, web Developer">
+
+  <!-- Open Grap Protocol ( OGP) , es un conjunnto de etiquetas que nos permiten controlar mejor como compartimos nuestras paginas en redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jimmy Arenas. Full Stack Web Developer">
+  <meta property="og:description"
+    content="Desarrollador Full Stack, especializado en construcción de interfaces de usuarios con React y creación de API Rest con Node.js #FullStackDevelopers #DesarrolladorWeb #developers">
+  <meta property="og:url" content="URL_DEL_PORTAFOLIO">
+  <meta property="og:image" content="URL_DE_LA_IMAGEN">
+
+  <!-- font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+
+  <!-- icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="body body--ligth body--dark">
+
+  <div id="progress"></div>
+
+  <nav class="nav">
+
+    <span id="menu" class="material-symbols-outlined">
+      menu
+    </span>
+
+    <div class="nav--menu transalate--menu">
+
+      <ul class="nav__ul">
+
+        <li class="nav__li navClose">
+          <span id="btn-translate" class=" btn material-symbols-outlined">
+            translate
+          </span>
+        </li>
+        <li class="nav__li navClose">
+          <span id="toggleModeBtn" class=" btn material-symbols-outlined">
+            <!-- dark_mode -->
+            light_mode
+          </span>
+        </li>
+
+      </ul>
+
+      <ul class="nav__ul">
+        <li class="nav__li navClose"><a href="#home" data-translate-es="Inico" data-translate-en="Home">Inicio</a></li>
+        <li class="nav__li navClose"><a href="#aboutMe" data-translate-es="Sobre mí" data-translate-en="About Me">Sobre mí</a>
+        </li>
+        <li class="nav__li navClose"><a href="#technologies" data-translate-es="Tecnologías"
+            data-translate-en="Technologies">Tecnologías</a></li>
+        <li class="nav__li navClose"><a href="#projects" data-translate-es="Proyectos" data-translate-en="Proyects">Proyectos</a>
+        </li>
+        <li class="nav__li navClose"><a href="#reviews" data-translate-es="Reseñas" data-translate-en="Reviews">Reseñas</a></li>
+        <li class="nav__li navClose"><a href="#contacMe" data-translate-es="Contáctame"
+            data-translate-en="Contac Me">Contáctame</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </nav>
+
+  <header class="header" id="home">
+    
+    <div class="headContainer">
+      <h1 class="item item1">Jimmy Arenas</h1>
+      <div class="logo-container item item2">
+        <img class="logo" src="./assets/img/logo.png">
+      </div>
+      <h3 class="item item3" data-translate-es="Desarrollador Full Stack, especializado en construcción de interfaces de usuarios con React y creación de API Rest con Node.js" data-translate-en="Full Stack Developer, specialized in building user interfaces with React and creating Rest API with Node.js">Desarrollador Full Stack, especializado en construcción de interfaces de usuarios con React y creación de API Rest con Node.js</h3>
+
+      <h2 class="item item4" data-translate-es="Desarrollador web Full Stack" data-translate-en="Full Stack Web Developer">Desarrollador web Full Stack</h2>
+    </div>
+
+    <div class="div--contact">
+      <a href="contactMe" class="div__a">
+        <span data-translate-es="Contáctame" data-translate-en="
+        Contact me">Contáctame</span>
+        <span class="material-symbols-outlined">
+          arrow_forward_ios
+        </span>
+      </a>
+
+      <a class="div__a" download href="./assets/cv/cv_es.png" data-translate-es="Descargar CV" data-translate-en="
+      Download CV" id="downloadCV">Descargar CV</a>
+    </div>
+
+    <div class="morph"></div>
+
+  </header>
+
+  <main class="main">
+    <section id="aboutMe" class="section">
+      <h2  class="section__h2" data-translate-en="About Me" data-translate-es="Sobre Mí">Sobre Mí</h2>
+      <p class="section__p"
+        data-translate-en="I am a passionate web development professional who has participated in multiple projects and has demonstrated a solid technical foundation. My solution-focused mindset and ability to quickly assimilate new technologies make me a valuable team member. Throughout my career, working on a wide variety of web projects, demonstrating versatility and skills in different areas of web development."
+        data-translate-es="Soy un profesional apasionado del desarrollo web que ha participado en múltiples proyectos y ha demostrado una sólida base técnica. mi mentalidad enfocada en encontrar soluciones y su capacidad para asimilar rápidamente nuevas tecnologías me convierten en un valioso miembro del equipo. A lo largo de mi carrera, trabajando en una amplia variedad de proyectos web, demostrando  versatilidad y habilidades en diferentes áreas del desarrollo web.">
+        Soy un profesional apasionado del desarrollo web que ha participado en múltiples proyectos y ha demostrado una sólida base técnica. mi mentalidad enfocada en encontrar soluciones y su capacidad para asimilar rápidamente nuevas tecnologías me convierten en un valioso miembro del equipo. A lo largo de mi carrera, trabajando en una amplia variedad de proyectos web, demostrando  versatilidad y habilidades en diferentes áreas del desarrollo web.
+      </p>
+
+      <h3 class="section__h3" data-translate-en="What distinguishes me?" data-translate-es="¿Qué me hace único?">¿Qué me
+        hace único?</h3>
+      <ul class="section__ul">
+        <li class="section__li">
+          <strong data-translate-en="Technical skills" data-translate-es="Habilidades técnicas">Habilidades técnicas</strong>
+          <span data-translate-en="I know different programming languages, frameworks and tools."
+            data-translate-es="Conozco diferentes lenguajes de programación, frameworks y herramientas.">
+            Conozco diferentes lenguajes de programación, frameworks y herramientas.
+          </span>
+        </li>
+        <li class="section__li">
+          <strong data-translate-en="
+          Focus on problem solving" data-translate-es="Enfoque en la solución de problemas">Enfoque en la solución de problemas</strong>
+          <span data-translate-en="I have the ability to think creatively and find efficient solutions to problems."
+            data-translate-es="Tengo la capacidad de pensar de manera creativa y encontrar soluciones eficientes a los problemas.">
+            Tengo la capacidad de pensar de manera creativa y encontrar soluciones eficientes a los problemas.
+          </span>
+        </li>
+        <li class="section__li">
+          <strong data-translate-en="Continuous learning" data-translate-es="Aprendizaje continuo">Aprendizaje continuo</strong>
+          <span
+            data-translate-en="I am willing to learn new technologies and improve your existing skills."
+            data-translate-es="Tengo la disposición para aprender nuevas tecnologías y mejorar tus habilidades existentes.">
+            Tengo la disposición para aprender nuevas tecnologías y mejorar tus habilidades existentes.
+          </span>
+        </li>
+        <li class="section__li">
+          <strong data-translate-en="Teamwork" data-translate-es="Trabajo en equipo">Trabajo en equipo</strong>
+          <span data-translate-en="
+          I have the ability to collaborate with other programmers and share knowledge."
+            data-translate-es="Tengo la capacidad para colaborar con otros programadores y compartir conocimientos.">
+            Tengo la capacidad para colaborar con otros programadores y compartir conocimientos.
+          </span>
+        </li>
+        <li class="section__li">
+          <strong data-translate-en="Communication skills" data-translate-es="Habilidades de comunicación">Habilidades de comunicación</strong>
+          <span data-translate-en="
+            I have the ability to communicate clearly and convey your ideas to others."
+            data-translate-es="Tengo la capacidad de comunicarme con claridad y transmitir tus ideas a otros.">
+            Tengo la capacidad de comunicarme con claridad y transmitir tus ideas a otros.
+          </span>
+        </li>
+      </ul>
+    </section>
+    
+    <section id="technologies" class="section">
+      <h2 class="section__h2" data-translate-en="Technologies" data-translate-es="Tecnologías">Tecnologías</h2>
+      <div class="tech-cards">
+        <!-- HTML Card -->
+        <article class="tech-card">
+          <span class="tech-card__front" data-tech="html">HTML</span>
+        </article>
+        <!-- CSS Card -->
+        <article class="tech-card">
+          <span class="tech-card__front" data-tech="css">CSS</span>
+        </article>
+        <!-- JavaScript Card -->
+        <article class="tech-card">
+          <span class="tech-card__front" data-tech="javascript">JavaScript</span>
+        </article>
+        <!-- Git Card -->
+        <article class="tech-card">
+          <span class="tech-card__front" data-tech="git">Git</span>
+        </article>
+        <!-- React Card -->
+        <article class="tech-card">
+          <span class="tech-card__front" data-tech="react">React</span>
+        </article>
+        <!-- Node.js Card -->
+        <article class="tech-card">
+          <span class="tech-card__front" data-tech="node">Node.js</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section section--projects">
+      <h2 class="section__h2" data-translate-es="Proyectos" data-translate-en="Projects">Proyectos</h2>
+
+
+
+      <article class='article'>
+
+        <button class='article__button left'>
+          <i class='bx bx-left-arrow-alt'></i>
+        </button>
+
+        <ul class='article__ul' id="conteiner_projects">
+          <!-- aqui se insertaran los li -->
+        </ul>
+
+        <button class="article__button rigth">
+          <i class='bx bx-right-arrow-alt'></i>
+        </button>
+
+      </article>
+    </section>
+
+    <section id="reviews" class="section section--reviws ">
+      <h2 data-translate-en="Reviews" data-translate-es="Reseñas" class="section__h2">Reseñas</h2>
+      <ul class="ul--review" id="reviews-list">
+        <!-- aqui insertaremos los li -->
+      </ul>
+    </section>
+
+    <section id="contactMe" class="section">
+      <h2 class="section__h2" id="contactHeader" data-translate-en="Contact Me" data-translate-es="Contáctame">
+        Contáctame</h2>
+      <p data-translate-en="I am available through multiple channels. Choose the one you prefer:"
+        data-translate-es="Estoy disponible a través de múltiples canales. Elige el que prefieras:">Estoy disponible a
+        través de múltiples canales. Elige el que prefieras:</p>
+      <div class="contact-options">
+        <a class="contact-item" href="tel:+573007376195">
+          <i class='icon bx bx-phone'></i>
+          <span data-translate-en="Call Me" data-translate-es="Llámame">Llámame</span>
+        </a>
+        <a class="contact-item" href="mailto:j3jimmy@gmail.com">
+          <i class='icon bx bxl-gmail'></i>
+          <span data-translate-en="Send me an email" data-translate-es="Envíame un correo">Envíame un correo</span>
+        </a>
+        <a class="contact-item" href="https://wa.me/+573007376195" target="_blank">
+          <i class='icon bx bxl-whatsapp'></i>
+          <span data-translate-en="WhatsApp" data-translate-es="WhatsApp">WhatsApp</span>
+        </a>
+        <a class="contact-item" href="" target="_blank">
+          <i class='icon bx bxl-linkedin'></i>
+          <span data-translate-en="LinkedIn" data-translate-es="LinkedIn">LinkedIn</span>
+        </a>
+        <a class="contact-item" href="https://github.com/gabrielmartinezghioma" target="_blank">
+          <i class='icon bx bxl-github'></i>
+          <span data-translate-en="GitHub" data-translate-es="GitHub">GitHub</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer-distributed">
+
+    <div class="footer__left">
+      <h3 class="footer__title" data-translate-en="Gabriel Martinez" data-translate-es="Jimmy Arenas">Jimmy Arenas</h3>
+      <p class="footer__description"
+        data-translate-en="Full-stack developer dedicated to learning and applying modern technologies to solve complex problems."
+        data-translate-es="Desarrollador Full-stack dedicado a aprender y aplicar tecnologías modernas para resolver problemas complejos.">
+        Desarrollador Full-stack dedicado a aprender y aplicar tecnologías modernas para resolver problemas complejos.
+      </p>
+    </div>
+
+    <div class="footer__center">
+      <div class="footer__icon"><i class="bx bx-map"></i></div>
+      <p class="footer__location" data-translate-en="Bogota-Colombia" data-translate-es="Bogota-Colombia">Bogota-Colombia</p>
+      <p class="footer__copyright" id="yearText"></p>
+    </div>
+
+    <div class="footer__right">
+      <a href="https://github.com/yourprofile" class="footer__social-icon footer__social-icon--facebook">
+        <i class='bx bxl-github'></i>
+      </a>
+      <a href="https://youtube.com/yourprofile" class="footer__social-icon footer__social-icon--twitter">
+        <i class='bx bxl-youtube'></i>
+      </a>
+      <a href="https://linkedin.com/yourprofile" class="footer__social-icon footer__social-icon--linkedin">
+        <i class="bx bxl-linkedin"></i>
+      </a>
+    </div>
+
+  </footer>
+
+
+
+
+  <script src="./assets/js/changeMode.js"></script>
+  <script src="./assets/js/changeLanguage.js"></script>
+  <script src="./assets/js/responsiveMenu.js"></script>
+  <script src="./assets/js/progressBar.js"></script>
+  <script src="./assets/js/promese.js"></script>
+  <script src="./assets/js/asyncAwait.js"></script>
+</body>
+
+</html>
